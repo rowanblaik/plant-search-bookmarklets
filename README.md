@@ -1,6 +1,6 @@
 ## Plant search bookmarklets
 
-The following links are 'bookmarklets' – links allow you to search BBG's plant records via the its public website. You can search in two ways: by highlighting a plant name or accession number in your web browser and clicking the bookmarklets in your bookmarks bar; or by clicking the bookmarklets first and entering a plant details in the on-screen prompt.
+The following links are 'bookmarklets' – special links to allow you to search BBG's plant records via the its public website. You can search in two ways: by highlighting a plant name or accession number in your web browser and clicking the bookmarklets in your bookmarks bar; or by clicking the bookmarklets first and entering a plant details in the on-screen prompt.
 
 ### Demo
 
@@ -51,4 +51,4 @@ To demo and install the following bookmarklets, go to https://rowanblaik.github.
 
 ### Credits
 
-This bookmarklets were inspired by Kew's, now defunct, ePIC [browser button](http://epic.kew.org/tbutton.htm).
+This bookmarklets were inspired by Kew's, now non-functional, ePIC [browser button](http://epic.kew.org/tbutton.htm).
