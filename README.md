@@ -19,7 +19,7 @@ To demo and install the following bookmarklets, go to https://rowanblaik.github.
 
 #### The Plant List:
 
-````javascript:Qr=document.getSelection().toString();if(Qr==''){void(Qr=window.prompt('Enter%20a%20scientific%20plant%20name:',''))};Qr=Qr.replace(/%C3%97/g,'x');if(Qr)window.open('http://www.theplantlist.org/tpl1.1/search?q='+escape(Qr),'_blank');````
+````javascript:Qr=document.getSelection().toString();if(Qr==''){void(Qr=window.prompt('Enter%20a%20scientific%20plant%20name:',''))};Qr=Qr.replace(/%C3%97/g,'');if(Qr)window.open('http://www.theplantlist.org/tpl1.1/search?q='+escape(Qr),'_blank');````
 
 #### RHS Find a Plant:
 
