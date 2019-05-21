@@ -24,6 +24,7 @@ To demo and install the following bookmarklets, go to https://rowanblaik.github.
 
 #### RHS Hort Database:
 
+Quirks:
 - No hybrid symbols
 - No quotes for cultivar names
 - Replaces space with ' and '
@@ -41,24 +42,28 @@ To demo and install the following bookmarklets, go to https://rowanblaik.github.
 
 #### NY Flora Atlas
 
+Quirks:
 - No space after hybrid symbols
 
 ````javascript:Qr=document.getSelection().toString().trim();if(Qr==''){void(Qr=window.prompt('Enter a scientific plant name:',''))};Qr=Qr.replace(/ x | × /g,' ×');if(Qr)window.open('http://newyork.plantatlas.usf.edu/Results.aspx?q='+encodeURIComponent(Qr),'_blank');````
 
 #### Plants for a Future:
 
+Quirks:
 - Replace ' × ' with ' x ' in search query
 
 ````javascript:Qr=document.getSelection().toString().trim();if(Qr==''){void(Qr=window.prompt('Enter a scientific plant name:',''))};Qr=Qr.replace(/×/g,'x');if(Qr)window.open('http://pfaf.org/user/Plant.aspx?LatinName='+encodeURIComponent(Qr),'_blank');````
 
 #### The Plant List:
 
+Quirks:
 - Remove hybrid symbols
 
 ````javascript:Qr=document.getSelection().toString().trim();if(Qr==''){void(Qr=window.prompt('Enter a scientific plant name:',''))};Qr=Qr.replace(/ x | × /g,' ');if(Qr)window.open('http://www.theplantlist.org/tpl1.1/search?q='+encodeURIComponent(Qr),'_blank');````
 
 #### USDA Plants:
 
+Quirks:
 - No space after hybrid symbols
 
 ````javascript:Qr=document.getSelection().toString().trim();if(Qr==''){void(Qr=window.prompt('Enter a scientific plant name:',''))};Qr=Qr.replace(/ x | × /g,' ×');if(Qr)window.open('http://plants.usda.gov/java/nameSearch?mode=sciname&keywordquery='+encodeURIComponent(Qr),'_blank');````
@@ -69,4 +74,4 @@ To demo and install the following bookmarklets, go to https://rowanblaik.github.
 
 ### Credits
 
-These bookmarklets were inspired by Kew's ePIC [browser button](http://epic.kew.org/tbutton.htm), using update JavaScript
+These bookmarklets were inspired by Kew's ePIC [browser button](http://epic.kew.org/tbutton.htm), using updated JavaScript
