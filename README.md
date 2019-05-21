@@ -27,7 +27,7 @@ To demo and install the following bookmarklets, go to https://rowanblaik.github.
 Quirks:
 - No hybrid symbols
 - No quotes for cultivar names
-- Replaces space with ' and '
+- Replace space with ' and '
 - Adds the first word of the query as the search genus
 
 ````javascript:Qr=document.getSelection().toString().trim();if(Qr==''){void(Qr=window.prompt('Enter a scientific plant name:',''))};Qr=Qr.replace(/×/g,'').replace(/['‘’]/g,'').replace(/\s+/g,' and ');if(Qr)window.open('http://apps.rhs.org.uk/horticulturaldatabase/summary2.asp?crit='+encodeURIComponent(Qr)+'&genus='+Qr.match(/\w+/),'_blank');````
@@ -43,7 +43,7 @@ Quirks:
 #### NY Flora Atlas
 
 Quirks:
-- No space after hybrid symbols
+- Remove after hybrid symbols
 
 ````javascript:Qr=document.getSelection().toString().trim();if(Qr==''){void(Qr=window.prompt('Enter a scientific plant name:',''))};Qr=Qr.replace(/ x | × /g,' ×');if(Qr)window.open('http://newyork.plantatlas.usf.edu/Results.aspx?q='+encodeURIComponent(Qr),'_blank');````
 
@@ -64,7 +64,7 @@ Quirks:
 #### USDA Plants:
 
 Quirks:
-- No space after hybrid symbols
+- Remove space after hybrid symbols
 
 ````javascript:Qr=document.getSelection().toString().trim();if(Qr==''){void(Qr=window.prompt('Enter a scientific plant name:',''))};Qr=Qr.replace(/ x | × /g,' ×');if(Qr)window.open('http://plants.usda.gov/java/nameSearch?mode=sciname&keywordquery='+encodeURIComponent(Qr),'_blank');````
 
